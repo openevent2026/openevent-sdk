@@ -79,6 +79,16 @@ smoke checks:
 make test
 ```
 
+Run end-to-end tests against a real OpenEvent server:
+
+```bash
+OPENEVENT_SERVER_BIN=<openevent_server_binary> make e2e
+```
+
+End-to-end tests use the `openevent-sdk>=0.3.0` package already installed in
+the current Python environment. They do not install this repository into a
+temporary dependency directory or generate SDK protobuf files.
+
 Clean build products and temporary files:
 
 ```bash

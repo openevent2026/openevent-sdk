@@ -73,6 +73,15 @@ make install INSTALL_ARGS="--prefix /opt/openevent-sdk"
 make test
 ```
 
+使用真实 OpenEvent server 运行端到端测试：
+
+```bash
+OPENEVENT_SERVER_BIN=<openevent_server_binary> make e2e
+```
+
+端到端测试使用当前 Python 环境中已经安装好的 `openevent-sdk>=0.3.0` 包；不会把
+本仓库安装到临时依赖目录，也不会在 e2e 脚本里生成 SDK protobuf 文件。
+
 清理构建产物和临时文件：
 
 ```bash
