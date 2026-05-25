@@ -1,0 +1,7 @@
+# C++ protobuf/grpc generated sources (build-time only)
+proto/openevent.pb.*
+proto/openevent.grpc.pb.*
+src/openevent/sdk/proto/openevent_pb2.py
+src/openevent/sdk/proto/openevent_pb2_grpc.py
+build/
+dist/
